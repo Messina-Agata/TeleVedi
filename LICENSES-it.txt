@@ -1,0 +1,19 @@
+Licenze dei componenti inclusi nel pacchetto:
+
+1. FFmpeg
+   - Licenza: GPL v2.1+
+   - Fonte: https://ffmpeg.org
+   - Codice sorgente corrispondente: https://github.com/FFmpeg/FFmpeg
+
+2. PHP
+   - Licenza: PHP License v3.01
+   - Fonte: https://www.php.net/license/index.php
+
+3. yt-dlp
+   - Licenza: Unlicense / MIT / CC0
+   - Fonte: https://github.com/yt-dlp/yt-dlp
+   - Nota: Users are solely responsible for using the program to download copyrighted material.
+
+4. Script Python, batch e PHP personalizzati
+   - Licenza: GPL v2+
+   - Autrice: Agata Messina

@@ -1,0 +1,187 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: en\n"
+
+msgid "TeleVedi - Registratore già in esecuzione"
+msgstr "TeleVedi - Recorder already running"
+
+msgid "Un'istanza di TeleVedi - Registratore è già avviata"
+msgstr "A TeleVedi - Recorder instance is already running"
+
+msgid "TeleVedi - Registratore"
+msgstr "TeleVedi - Recorder"
+
+msgid "Programmato"
+msgstr "Programmed"
+
+msgid "Flusso non valido"
+msgstr "Streaming not valid"
+
+msgid "Il canale selezionato è al momento non raggiungibile, pertanto la registrazione potrebbe non andare a buon fine. Avviare comunque la registrazione?"
+msgstr "The selected channel is currently not available, therefore the recording may not be successful. Do you still want to start the recording?"
+
+msgid "Avvia registrazione"
+msgstr "Start recording"
+
+msgid "Registrazione avviata"
+msgstr "Recording started"
+
+msgid "Il canale selezionato è al momento non raggiungibile, pertanto la registrazione potrebbe non andare a buon fine. Programmare comunque la registrazione?"
+msgstr "The selected channel is currently not available, therefore the recording may not be successful. Do you still want to program the recording?"
+
+msgid "Programma registrazione"
+msgstr "Program recording"
+
+msgid "Registrazione programmata correttamente"
+msgstr "Recording correctly programmed"
+
+msgid "Registrazioni in corso"
+msgstr "Recordings in progress"
+
+msgid "Nessuna registrazione in corso"
+msgstr "No recordings in progress"
+
+msgid "Canale: %s"
+msgstr "Channel: %s"
+
+msgid "Ferma registrazione"
+msgstr "Stop recording"
+
+msgid "Registrazioni programmate"
+msgstr "Programmed recordings"
+
+msgid "Non ci sono registrazioni programmate"
+msgstr "There are no programmed recordings"
+
+msgid "Data inizio: %s"
+msgstr "Start date: %s"
+
+msgid "Ora inizio: %s"
+msgstr "Start time: %s"
+
+msgid "Data fine: %s"
+msgstr "End date: %s"
+
+msgid "Ora fine: %s"
+msgstr "End time: %s"
+
+msgid "Conferma"
+msgstr "Confirm"
+
+msgid "Vuoi davvero cancellare la registrazione programmata?"
+msgstr "Do you really want to delete the programmed recording?"
+
+msgid "Cancella"
+msgstr "Cancel"
+
+msgid "Seleziona un file M3U"
+msgstr "Select an M3U file"
+
+msgid "Tutti i file"
+msgstr "All files"
+
+msgid "Importazione completata"
+msgstr "Import completed"
+
+msgid "Nuovi canali aggiunti: %s"
+msgstr "New channels added: %s"
+
+msgid "Errore"
+msgstr "Error"
+
+msgid "Il file selezionato non è valido"
+msgstr "The selected file is not valid"
+
+msgid "Aggiungi canale"
+msgstr "Add channel"
+
+msgid "Modifica canale"
+msgstr "Edit channel"
+
+msgid "Nome canale"
+msgstr "Channel name"
+
+msgid "Flusso"
+msgstr "Streaming"
+
+msgid "Annulla"
+msgstr "Cancel"
+
+msgid "Canali selezionati: %s"
+msgstr "Selected channels: %s"
+
+msgid "Sei sicuro di voler procedere con l'eliminazione?"
+msgstr "Are you sure you want to proceed with deletion?"
+
+msgid "Controllo disponibilità"
+msgstr "Availability check"
+
+msgid "Controlla disponibilità"
+msgstr "Check availability"
+
+msgid "Controllo terminato. I flussi non raggiungibili (%s) sono evidenziati in rosso"
+msgstr "Check completed. Streams not available (%s) are highlighted in red"
+
+msgid "Controllo terminato. Tutti i flussi sono raggiungibili"
+msgstr "Check completed. All the streams are available"
+
+msgid "Gestione canali"
+msgstr "Channels manager"
+
+msgid "Importa m3u"
+msgstr "Import m3u"
+
+msgid "Aggiungi"
+msgstr "Add"
+
+msgid "Modifica"
+msgstr "Edit"
+
+msgid "Rimuovi"
+msgstr "Remove"
+
+msgid "Attenzione"
+msgstr "Warning"
+
+msgid "Impossibile chiudere il programma perché c'è almeno una registrazione in corso. Ferma le registrazioni in corso."
+msgstr "Cannot close the program because at least one recording is in progress. Please stop all active recordings."
+
+msgid "Termini e Condizioni"
+msgstr "Terms and Conditions"
+
+msgid "Accetto"
+msgstr "Accept"
+
+msgid "Non accetto"
+msgstr "Do not accept"
+
+msgid "Controllo registrazione"
+msgstr "Recording control"
+
+msgid "Manuale"
+msgstr "Manual"
+
+msgid "Canale"
+msgstr "Channel"
+
+msgid "Salva registrazione in..."
+msgstr "Save recording in..."
+
+msgid "Vedi registrazioni in corso"
+msgstr "See recordings in progress"
+
+msgid "Gestisci canali"
+msgstr "Manage channels"
+
+msgid "Data e ora d'inizio"
+msgstr "Start date and time"
+
+msgid "Data e ora di fine"
+msgstr "End date and time"
+
+msgid "Vedi registrazioni programmate"
+msgstr "See programmed recordings"
+
+msgid "Segnala un problema"
+msgstr "Report a problem"

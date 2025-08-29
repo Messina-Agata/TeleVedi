@@ -1,0 +1,187 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: it\n"
+
+msgid "TeleVedi - Registratore già in esecuzione"
+msgstr "TeleVedi - Registratore già in esecuzione"
+
+msgid "Un'istanza di TeleVedi - Registratore è già avviata"
+msgstr "Un'istanza di TeleVedi - Registratore è già avviata"
+
+msgid "TeleVedi - Registratore"
+msgstr "TeleVedi - Registratore"
+
+msgid "Programmato"
+msgstr "Programmato"
+
+msgid "Flusso non valido"
+msgstr "Flusso non valido"
+
+msgid "Il canale selezionato è al momento non raggiungibile, pertanto la registrazione potrebbe non andare a buon fine. Avviare comunque la registrazione?"
+msgstr "Il canale selezionato è al momento non raggiungibile, pertanto la registrazione potrebbe non andare a buon fine. Avviare comunque la registrazione?"
+
+msgid "Avvia registrazione"
+msgstr "Avvia registrazione"
+
+msgid "Registrazione avviata"
+msgstr "Registrazione avviata"
+
+msgid "Il canale selezionato è al momento non raggiungibile, pertanto la registrazione potrebbe non andare a buon fine. Programmare comunque la registrazione?"
+msgstr "Il canale selezionato è al momento non raggiungibile, pertanto la registrazione potrebbe non andare a buon fine. Programmare comunque la registrazione?"
+
+msgid "Programma registrazione"
+msgstr "Programma registrazione"
+
+msgid "Registrazione programmata correttamente"
+msgstr "Registrazione programmata correttamente"
+
+msgid "Registrazioni in corso"
+msgstr "Registrazioni in corso"
+
+msgid "Nessuna registrazione in corso"
+msgstr "Nessuna registrazione in corso"
+
+msgid "Canale: %s"
+msgstr "Canale: %s"
+
+msgid "Ferma registrazione"
+msgstr "Ferma registrazione"
+
+msgid "Registrazioni programmate"
+msgstr "Registrazioni programmate"
+
+msgid "Non ci sono registrazioni programmate"
+msgstr "Non ci sono registrazioni programmate"
+
+msgid "Data inizio: %s"
+msgstr "Data inizio: %s"
+
+msgid "Ora inizio: %s"
+msgstr "Ora inizio: %s"
+
+msgid "Data fine: %s"
+msgstr "Data fine: %s"
+
+msgid "Ora fine: %s"
+msgstr "Ora fine: %s"
+
+msgid "Conferma"
+msgstr "Conferma"
+
+msgid "Vuoi davvero cancellare la registrazione programmata?"
+msgstr "Vuoi davvero cancellare la registrazione programmata?"
+
+msgid "Cancella"
+msgstr "Cancella"
+
+msgid "Seleziona un file M3U"
+msgstr "Seleziona un file M3U"
+
+msgid "Tutti i file"
+msgstr "Tutti i file"
+
+msgid "Importazione completata"
+msgstr "Importazione completata"
+
+msgid "Nuovi canali aggiunti: %s"
+msgstr "Nuovi canali aggiunti: %s"
+
+msgid "Errore"
+msgstr "Errore"
+
+msgid "Il file selezionato non è valido"
+msgstr "Il file selezionato non è valido"
+
+msgid "Aggiungi canale"
+msgstr "Aggiungi canale"
+
+msgid "Modifica canale"
+msgstr "Modifica canale"
+
+msgid "Nome canale"
+msgstr "Nome canale"
+
+msgid "Flusso"
+msgstr "Flusso"
+
+msgid "Annulla"
+msgstr "Annulla"
+
+msgid "Canali selezionati: %s"
+msgstr "Canali selezionati: %s"
+
+msgid "Sei sicuro di voler procedere con l'eliminazione?"
+msgstr "Sei sicuro di voler procedere con l'eliminazione?"
+
+msgid "Controllo disponibilità"
+msgstr "Controllo disponibilità"
+
+msgid "Controlla disponibilità"
+msgstr "Controlla disponibilità"
+
+msgid "Controllo terminato. I flussi non raggiungibili (%s) sono evidenziati in rosso"
+msgstr "Controllo terminato. I flussi non raggiungibili (%s) sono evidenziati in rosso"
+
+msgid "Controllo terminato. Tutti i flussi sono raggiungibili"
+msgstr "Controllo terminato. Tutti i flussi sono raggiungibili"
+
+msgid "Gestione canali"
+msgstr "Gestione canali"
+
+msgid "Importa m3u"
+msgstr "Importa m3u"
+
+msgid "Aggiungi"
+msgstr "Aggiungi"
+
+msgid "Modifica"
+msgstr "Modifica"
+
+msgid "Rimuovi"
+msgstr "Rimuovi"
+
+msgid "Attenzione"
+msgstr "Attenzione"
+
+msgid "Impossibile chiudere il programma perché c'è almeno una registrazione in corso. Ferma le registrazioni in corso."
+msgstr "Impossibile chiudere il programma perché c'è almeno una registrazione in corso. Ferma le registrazioni in corso."
+
+msgid "Termini e Condizioni"
+msgstr "Termini e Condizioni"
+
+msgid "Accetto"
+msgstr "Accetto"
+
+msgid "Non accetto"
+msgstr "Non accetto"
+
+msgid "Controllo registrazione"
+msgstr "Controllo registrazione"
+
+msgid "Manuale"
+msgstr "Manuale"
+
+msgid "Canale"
+msgstr "Canale"
+
+msgid "Salva registrazione in..."
+msgstr "Salva registrazione in..."
+
+msgid "Vedi registrazioni in corso"
+msgstr "Vedi registrazioni in corso"
+
+msgid "Gestisci canali"
+msgstr "Gestisci canali"
+
+msgid "Data e ora d'inizio"
+msgstr "Data e ora d'inizio"
+
+msgid "Data e ora di fine"
+msgstr "Data e ora di fine"
+
+msgid "Vedi registrazioni programmate"
+msgstr "Vedi registrazioni programmate"
+
+msgid "Segnala un problema"
+msgstr "Segnala un problema" 

@@ -1,0 +1,4 @@
+tkcalendar
+psutil
+schedule
+requests
