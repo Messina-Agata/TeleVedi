@@ -7,6 +7,8 @@ where python >nul 2>nul
 if errorlevel 1 (
     if "%locale%"=="0410" (
         echo Python non è installato o non è nel PATH.
+    ) else if "%locale%"=="0407" (
+        echo Python ist nicht installiert oder befindet sich nicht im PATH.
     ) else (
         echo Python is not installed or is not in the PATH.
     )
@@ -22,6 +24,8 @@ for /f "tokens=1,2 delims=." %%a in ("!pyver!") do (
 if !major! LSS 3 (
     if "%locale%"=="0410" (
         echo Python deve essere almeno alla versione 3.10. La versione rilevata è la !pyver!
+    ) else if "%locale%"=="0407" (
+        echo Python muss mindestens in Version 3.10 vorliegen. Erkannte Version: !pyver!
     ) else (
         echo Python must be at least version 3.10. The detected version is !pyver!
     )
@@ -31,6 +35,8 @@ if !major! LSS 3 (
 if !major! EQU 3 if !minor! LSS 10 (
     if "%locale%"=="0410" (
         echo Python deve essere almeno alla versione 3.10. La versione rilevata è la !pyver!
+    ) else if "%locale%"=="0407" (
+        echo Python muss mindestens in Version 3.10 vorliegen. Erkannte Version: !pyver!
     ) else (
         echo Python must be at least version 3.10. The detected version is !pyver!
     )
@@ -41,6 +47,8 @@ python -m pip --version >nul 2>nul
 if errorlevel 1 (
     if "%locale%"=="0410" (
         echo pip non è disponibile per la versione di Python usata in questo computer !pyver!. Assicurati che sia installato.
+    ) else if "%locale%"=="0407" (
+        echo pip ist für die auf diesem Computer verwendete Python-Version !pyver! nicht verfügbar. Bitte stelle sicher, dass es installiert ist.
     ) else (
         echo pip is not available for the Python version installed in this computer !pyver!. Make sure that it is installed.
     )
@@ -50,6 +58,8 @@ if errorlevel 1 (
 if not exist "rec_env" (
     if "%locale%"=="0410" (
         echo Creazione ambiente virtuale...
+    ) else if "%locale%"=="0407" (
+        echo Virtuelle Umgebung wird erstellt...
     ) else (
         echo Creating virtual environment...
     )
@@ -58,6 +68,8 @@ if not exist "rec_env" (
 
 if "%locale%"=="0410" (
     echo Attivazione ambiente...
+) else if "%locale%"=="0407" (
+    echo Umgebung wird aktiviert...
 ) else (
     echo Activating environment...
 )
@@ -65,6 +77,8 @@ call rec_env\Scripts\activate.bat
 
 if "%locale%"=="0410" (
     echo Installazione moduli...
+) else if "%locale%"=="0407" (
+    echo Module werden installiert...
 ) else (
     echo Installing modules...
 )
@@ -75,6 +89,8 @@ setlocal
 IF NOT EXIST "ffmpeg.exe" (
     if "%locale%"=="0410" (
         echo Estrazione di ffmpeg.exe da ffmpeg.zip...
+    ) else if "%locale%"=="0407" (
+        echo Extrahieren von ffmpeg.exe aus ffmpeg.zip...
     ) else (
         echo Extracting ffmpeg.exe from ffmpeg.zip...
     )
@@ -83,12 +99,16 @@ IF NOT EXIST "ffmpeg.exe" (
         powershell -Command "Expand-Archive -Path 'ffmpeg.zip' -DestinationPath '.'"
         if "%locale%"=="0410" (
             echo Estrazione completata.
+        ) else if "%locale%"=="0407" (
+            echo Extraktion abgeschlossen.
         ) else (
             echo Extraction completed.
         )
     ) ELSE (
         if "%locale%"=="0410" (
             echo ERRORE: ffmpeg.zip non trovato!
+        ) else if "%locale%"=="0407" (
+            echo FEHLER: ffmpeg.zip nicht gefunden!
         ) else (
             echo ERROR: ffmpeg.zip not found!
         )

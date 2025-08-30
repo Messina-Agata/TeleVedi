@@ -842,10 +842,22 @@ def accetta_condizioni_di_utilizzo(window):
     È severamente vietato eludere, aggirare o compromettere le misure tecnologiche di protezione applicate ai flussi streaming, inclusi sistemi DRM, cifrature, restrizioni geografiche o qualsiasi altra tecnologia volta a tutelare i diritti dei contenuti trasmessi.
     4. Responsabilità dell’utente
     L’utente è l’unico responsabile per l’utilizzo del software in violazione della Legge sul Diritto d’Autore (LdA) o di altre normative. Il titolare del software declina ogni responsabilità per eventuali conseguenze civili, penali o amministrative derivanti da un uso illecito o improprio da parte dell’utente.
-
+        """)
+    elif lang == 'de':
+        area_testo.insert(tk.INSERT, """\
+        NUTZUNGSLIZENZ (EULA) – ENDNUTZER-LIZENZVERTRAG
+    ACHTUNG: Die Installation und Nutzung dieser Software setzt die vollständige Zustimmung zu den hier aufgeführten Bedingungen voraus. Wenn Sie diesen Bedingungen nicht zustimmen, ist die Nutzung der Software nicht gestattet.
+    1. Zweck der Nutzung
+    Die Software wird ausschließlich zur Aufnahme und Kopie von vom Nutzer hochgeladenen Streams für persönliche und nicht-kommerzielle Zwecke lizenziert. Jede andere Nutzung, einschließlich der Verbreitung oder Weitergabe der aufgenommenen Inhalte, ist ohne ausdrückliche Genehmigung der Rechteinhaber untersagt.
+    2. Rechtmäßige Herkunft der Streams
+    Der Nutzer ist verpflichtet, ausschließlich Streams aus rechtmäßigen und gesetzlich autorisierten Quellen zu verwenden. Das Einfügen und Aufzeichnen von Streams, die Urheberrechte, Lizenzen oder andere geltende Vorschriften verletzen, ist verboten. Der Nutzer erklärt, dass er das gesetzliche Recht besitzt, auf die übertragenen Inhalte zuzugreifen und diese aufzuzeichnen.
+    3. Verbot der Umgehung von Schutzmaßnahmen
+    Es ist strengstens untersagt, technische Schutzmaßnahmen für Streaming-Inhalte zu umgehen, zu manipulieren oder zu beeinträchtigen, einschließlich DRM-Systemen, Verschlüsselungen, geografischen Beschränkungen oder anderer Technologien zum Schutz der übertragenen Inhalte.
+    4. Verantwortung des Nutzers
+    Der Nutzer trägt die alleinige Verantwortung für die Nutzung der Software im Widerspruch zum Urheberrechtsgesetz (UrhG) oder anderen gesetzlichen Bestimmungen. Der Inhaber der Software lehnt jegliche Haftung für zivil-, straf- oder verwaltungsrechtliche Konsequenzen ab, die sich aus einer rechtswidrigen oder unsachgemäßen Nutzung durch den Nutzer ergeben.
         """)
     else:
-            area_testo.insert(tk.INSERT, """\
+        area_testo.insert(tk.INSERT, """\
         END USER LICENSE AGREEMENT (EULA)
     WARNING: Installing and using this software implies full acceptance of the terms and conditions set forth herein. If you do not accept these conditions, use of the software is not permitted.
     1. Purpose of Use

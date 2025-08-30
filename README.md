@@ -1,10 +1,10 @@
 # TeleVedi
 
-## 🌍 Lingua / Language
+## 🌍 Lingua / Language / Sprache
 
 - 🇮🇹 [Italiano](#italiano)
 - 🇬🇧 [English](#english)
-
+- 🇩🇪 [Deutsch](#deutsch)
 
 ## Italiano
 
@@ -21,7 +21,7 @@
 - `Registratore.py`: Script principale
 - `TeleVediInstaller.py`: Script per installare i componenti indispensabili per il funzionamento del programma
 - `TeleVediUninstaller.py`: Script per disinstallare lo scheduler del programma
-- Script PHP e Python di supporto
+- Script PHP, batch e Python di supporto
 - `ffmpeg.exe`, `php.exe`, `yt-dlp.exe`: Eseguibili necessari
 - File di configurazione: `.json`, `.txt`
 
@@ -79,7 +79,7 @@ Tenere in considerazione che le registrazioni programmate non vengono avviate n�
 
 ⚠️ Eseguire le seguenti istruzioni nell'ordine indicato:
 - avviare `TeleVediUninstaller.bat` per disinstallare lo scheduler del programma
-- cancellare l'intera cartella di `TeleVedi`
+- cancellare l'intera cartella `TeleVedi`
 
 ## ⚖️ Licenze
 
@@ -133,7 +133,7 @@ Per qualsiasi dubbio sull’uso legale del software, si consiglia di consultare 
 - `Registratore.py`: Main script
 - `TeleVediInstaller.py`: Script to install the required components
 - `TeleVediUninstaller.py`: Script to uninstall the program scheduler
-- PHP and Python support scripts
+- PHP, Batch and Python support scripts
 - `ffmpeg.exe`, `php.exe`, `yt-dlp.exe`: Required executables
 - Configuration files: `.json`, `.txt`
 
@@ -225,3 +225,111 @@ In accordance with European directives on copyright (Directive 2001/29/EC), cont
 The author does not encourage or endorse the use of this program to violate copyright laws or to access encrypted, paid, or DRM-protected content.
 
 For any doubts regarding the legal use of the software, it is recommended to consult a legal expert or refer to the Copyright Law.
+
+## Deutsch
+
+<div style="display: flex; align-items: center;">
+  <img src="img/logo.jpg" width="150" style="margin-right: 15px;">
+  <p style="margin: 0;">
+    <strong>TeleVedi - Recorder</strong> ist ein Programm, das es Nutzern ermöglicht, die Aufnahme von Streams entweder in Echtzeit oder innerhalb eines geplanten Zeitraums zu verwalten.
+  </p>
+</div>
+
+
+## 📦 Lieferumfang
+
+- `Registratore.py`: Hauptskript
+- `TeleVediInstaller.py`: Skript zur Installation der erforderlichen Komponenten
+- `TeleVediUninstaller.py`: Skript zur Deinstallation des Programmplaners
+- Unterstützungsskripte für PHP, Batch und Python
+- `ffmpeg.exe`, `php.exe`, `yt-dlp.exe`: Erforderliche ausführbare Dateien
+- Konfigurationsdateien: `.json`, `.txt`
+
+## 🛠 Anforderungen
+
+- Betriebssystem: Windows 10 (64-Bit-Architektur) oder neuer
+- Python 3.10 oder höher [(hier herunterladen)](https://www.python.org/downloads/)
+
+## 🚀 Installation
+
+- Führen Sie `TeleVediInstaller.bat` aus, um:
+  - zu überprüfen, ob Microsoft Visual C++ Runtime Version 14.40 oder höher installiert ist, und sie gegebenenfalls zu installieren
+  - eine `TeleVedi`-Verknüpfung zu erstellen, um das Programm zu starten
+
+## ▶️ Programmstart
+
+Um das Programm zu starten, öffnen Sie die Verknüpfung `TeleVedi`. Beim ersten Start akzeptieren Sie bitte die Nutzungsbedingungen.
+
+## 📖 Anleitung zur Verwendung
+
+Das Programm ermöglicht es den Nutzern, Streams basierend auf einer benutzerdefinierten Senderliste aufzuzeichnen.
+
+Die Senderliste kann über die Schaltfläche `Kanäle verwalten` bearbeitet werden. Diese bietet folgende Funktionen:
+- Import von Kanälen aus einer .m3u-Playlist
+- Manuelles Hinzufügen von Kanälen
+- Bearbeiten vorhandener Kanäle
+- Entfernen vorhandener Kanäle
+- Überprüfen der Verfügbarkeit der Kanäle in der Liste
+
+Die Funktionalität wurde mit folgenden Linktypen getestet:
+- .m3u8-Dateien
+- .mpd-Dateien
+- YouTube-Livestreams
+- Twitch-Kanäle
+
+Nach dem Erstellen der Senderliste wählen Sie den gewünschten Aufzeichnungsmodus:
+- `Manuell` zur Echtzeitaufnahme (manuelles Starten und Stoppen)
+- `Geplant` zur geplanten Aufnahme (automatisches Starten und Stoppen)
+
+![alt text](img/image-6.png)
+![alt text](img/image-7.png)
+
+Füllen Sie alle sichtbaren Felder aus. Wenn Felder leer bleiben oder widersprüchliche Werte enthalten, kann die Aufnahme nicht gestartet oder geplant werden.
+
+Bitte beachten Sie: Geplante Aufnahmen beginnen und enden nicht exakt zur angegebenen Minute; es kann zu leichten Verzögerungen von weniger als einer Minute kommen.
+
+⚠️ Während der geplanten Aufnahmezeit muss der Computer eingeschaltet und entsperrt bleiben. Deaktivieren Sie die automatische Bildschirmsperre für die gesamte Dauer der Aufnahme. Es wird empfohlen, den Computer mindestens 5 Minuten vor dem geplanten Start einzuschalten.
+
+⚠️ Beim Start der Aufnahme öffnet sich ein Fenster mit dem Fortschritt der Aufnahme. Das Schließen dieses Fensters beendet die Aufnahme sofort. Achten Sie daher darauf, das Fenster nicht zu schließen.
+
+⚠️ Der Computer muss während der gesamten Aufnahmezeit mit dem Internet verbunden sein.
+
+## 🧹 Deinstallieren
+
+⚠️ Führen Sie die folgenden Schritte in der angegebenen Reihenfolge aus:
+- Führen Sie `TeleVediUninstaller.bat` aus, um den Programmplaner zu deinstallieren
+- Löschen Sie den gesamten Ordner `TeleVedi`
+
+## ⚖️ Lizenzen
+
+Weitere Informationen zu den Lizenzen der enthaltenen Komponenten finden Sie in der Datei `LICENSES-de.txt`.
+
+## 📜 Rechtliche Hinweise
+
+- Die Nutzer sind allein verantwortlich für die Verwendung von yt-dlp zum Herunterladen von Inhalten aus dem Internet.
+- FFmpeg wird unter den Bedingungen der GPL-Lizenz vertrieben. Der entsprechende Quellcode ist verfügbar auf [GitHub FFmpeg](https://github.com/FFmpeg/FFmpeg).
+- PHP wird unter der PHP-Lizenz Version 3.01 vertrieben.
+
+## 📢 Rechtlicher Haftungsausschluss
+
+Die Aufnahmefunktion dieser Software ist ausschließlich für den **persönlichen und privaten Gebrauch** bestimmt.
+Gemäß den europäischen Richtlinien zum Urheberrecht (Richtlinie 2001/29/EG) darf Inhalt nur für die private Nutzung aufgezeichnet werden, unter folgenden Bedingungen:
+
+✅ Zulässig:
+- Aufzeichnung von Sendungen aus rechtmäßigen Quellen für den persönlichen Gebrauch
+- Speicherung von Aufnahmen in einem privaten Archiv
+- Wiedergabe aufgezeichneter Inhalte im häuslichen Umfeld
+
+❌ Unzulässig:
+- Umgehung technischer Schutzmaßnahmen
+- Weitergabe, Veröffentlichung oder erneute Übertragung aufgezeichneter Inhalte
+- Nutzung von Aufnahmen zu kommerziellen, schulischen oder öffentlichen Zwecken
+- Veränderung oder Manipulation von Inhalten zu anderen Zwecken als der privaten Wiedergabe
+
+⚖️ Rechtliche Grundlage:
+- Richtlinie 2001/29/EG des Europäischen Parlaments
+
+⚠️ Der Nutzer ist allein verantwortlich für die Verwendung der Software.
+Der Autor unterstützt oder billigt nicht die Nutzung dieses Programms zur Verletzung von Urheberrechten oder zum Zugriff auf verschlüsselte, kostenpflichtige oder DRM-geschützte Inhalte.
+
+Bei Unsicherheiten zur rechtmäßigen Nutzung der Software wird empfohlen, einen Rechtsexperten zu konsultieren oder die geltenden Urheberrechtsbestimmungen zu prüfen.

@@ -1,0 +1,187 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: de\n"
+
+msgid "TeleVedi - Registratore già in esecuzione"
+msgstr "TeleVedi - Recorder läuft bereits"
+
+msgid "Un'istanza di TeleVedi - Registratore è già avviata"
+msgstr "Eine Instanz von TeleVedi - Recorder ist bereits gestartet"
+
+msgid "TeleVedi - Registratore"
+msgstr "TeleVedi - Recorder"
+
+msgid "Programmato"
+msgstr "Geplant"
+
+msgid "Flusso non valido"
+msgstr "Ungültiger Stream"
+
+msgid "Il canale selezionato è al momento non raggiungibile, pertanto la registrazione potrebbe non andare a buon fine. Avviare comunque la registrazione?"
+msgstr "Der ausgewählte Kanal ist derzeit nicht erreichbar, daher könnte die Aufnahme fehlschlagen. Aufnahme trotzdem starten?"
+
+msgid "Avvia registrazione"
+msgstr "Aufnahme starten"
+
+msgid "Registrazione avviata"
+msgstr "Aufnahme gestartet"
+
+msgid "Il canale selezionato è al momento non raggiungibile, pertanto la registrazione potrebbe non andare a buon fine. Programmare comunque la registrazione?"
+msgstr "Der ausgewählte Kanal ist derzeit nicht erreichbar, daher könnte die Aufnahme fehlschlagen. Aufnahme trotzdem planen?"
+
+msgid "Programma registrazione"
+msgstr "Aufnahme planen"
+
+msgid "Registrazione programmata correttamente"
+msgstr "Aufnahme erfolgreich geplant"
+
+msgid "Registrazioni in corso"
+msgstr "Laufende Aufnahmen"
+
+msgid "Nessuna registrazione in corso"
+msgstr "Keine laufende Aufnahme"
+
+msgid "Canale: %s"
+msgstr "Kanal: %s"
+
+msgid "Ferma registrazione"
+msgstr "Aufnahme stoppen"
+
+msgid "Registrazioni programmate"
+msgstr "Geplante Aufnahmen"
+
+msgid "Non ci sono registrazioni programmate"
+msgstr "Keine geplanten Aufnahmen vorhanden"
+
+msgid "Data inizio: %s"
+msgstr "Startdatum: %s"
+
+msgid "Ora inizio: %s"
+msgstr "Startzeit: %s"
+
+msgid "Data fine: %s"
+msgstr "Enddatum: %s"
+
+msgid "Ora fine: %s"
+msgstr "Endzeit: %s"
+
+msgid "Conferma"
+msgstr "Bestätigen"
+
+msgid "Vuoi davvero cancellare la registrazione programmata?"
+msgstr "Möchten Sie die geplante Aufnahme wirklich löschen?"
+
+msgid "Cancella"
+msgstr "Löschen"
+
+msgid "Seleziona un file M3U"
+msgstr "Wählen Sie eine M3U-Datei aus"
+
+msgid "Tutti i file"
+msgstr "Alle Dateien"
+
+msgid "Importazione completata"
+msgstr "Import abgeschlossen"
+
+msgid "Nuovi canali aggiunti: %s"
+msgstr "Neue Kanäle hinzugefügt: %s"
+
+msgid "Errore"
+msgstr "Fehler"
+
+msgid "Il file selezionato non è valido"
+msgstr "Die ausgewählte Datei ist ungültig"
+
+msgid "Aggiungi canale"
+msgstr "Kanal hinzufügen"
+
+msgid "Modifica canale"
+msgstr "Kanal bearbeiten"
+
+msgid "Nome canale"
+msgstr "Kanalname"
+
+msgid "Flusso"
+msgstr "Stream"
+
+msgid "Annulla"
+msgstr "Abbrechen"
+
+msgid "Canali selezionati: %s"
+msgstr "Ausgewählte Kanäle: %s"
+
+msgid "Sei sicuro di voler procedere con l'eliminazione?"
+msgstr "Sind Sie sicher, dass Sie löschen möchten?"
+
+msgid "Controllo disponibilità"
+msgstr "Verfügbarkeitsprüfung"
+
+msgid "Controlla disponibilità"
+msgstr "Verfügbarkeit prüfen"
+
+msgid "Controllo terminato. I flussi non raggiungibili (%s) sono evidenziati in rosso"
+msgstr "Prüfung abgeschlossen. Nicht erreichbare Streams (%s) sind rot markiert"
+
+msgid "Controllo terminato. Tutti i flussi sono raggiungibili"
+msgstr "Prüfung abgeschlossen. Alle Streams sind erreichbar"
+
+msgid "Gestione canali"
+msgstr "Kanalverwaltung"
+
+msgid "Importa m3u"
+msgstr "M3U importieren"
+
+msgid "Aggiungi"
+msgstr "Hinzufügen"
+
+msgid "Modifica"
+msgstr "Bearbeiten"
+
+msgid "Rimuovi"
+msgstr "Entfernen"
+
+msgid "Attenzione"
+msgstr "Achtung"
+
+msgid "Impossibile chiudere il programma perché c'è almeno una registrazione in corso. Ferma le registrazioni in corso."
+msgstr "Das Programm kann nicht geschlossen werden, da mindestens eine Aufnahme läuft. Bitte stoppen Sie die laufenden Aufnahmen."
+
+msgid "Termini e Condizioni"
+msgstr "Allgemeine Geschäftsbedingungen"
+
+msgid "Accetto"
+msgstr "Ich stimme zu"
+
+msgid "Non accetto"
+msgstr "Ich stimme nicht zu"
+
+msgid "Controllo registrazione"
+msgstr "Aufnahmekontrolle"
+
+msgid "Manuale"
+msgstr "Manuell"
+
+msgid "Canale"
+msgstr "Kanal"
+
+msgid "Salva registrazione in..."
+msgstr "  Speichern unter...  "
+
+msgid "Vedi registrazioni in corso"
+msgstr "Laufende Aufnahmen anzeigen"
+
+msgid "Gestisci canali"
+msgstr "Kanäle verwalten"
+
+msgid "Data e ora d'inizio"
+msgstr "Startdatum und -zeit"
+
+msgid "Data e ora di fine"
+msgstr "Enddatum und -zeit"
+
+msgid "Vedi registrazioni programmate"
+msgstr "Geplante Aufnahmen anzeigen"
+
+msgid "Segnala un problema"
+msgstr "Ein Problem melden"

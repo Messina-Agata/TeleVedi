@@ -29,6 +29,8 @@ def register_autostart(script_path):
         f.write(f'If Not fso.FileExists("{python_exe}") Then\n')
         if lang == 'it':
             f.write(f'    MsgBox "Impossibile trovare {python_exe}. Eseguire TeleVediInstaller.bat per correggere l\'errore."\n')
+        elif lang == 'de':
+            f.write(f'    MsgBox "{python_exe} konnte nicht gefunden werden. Führen Sie TeleVediInstaller.bat aus, um den Fehler zu beheben."\n')
         else:
             f.write(f'    MsgBox "Cannot find {python_exe}. Run TeleVediInstaller.bat to fix the error."\n')
         f.write(f'    WScript.Quit\n')
@@ -36,6 +38,8 @@ def register_autostart(script_path):
         f.write(f'If Not fso.FileExists("{script_path}") Then\n')
         if lang == 'it':
             f.write(f'    MsgBox "Impossibile trovare {script_path}. Eseguire TeleVediInstaller.bat per correggere l\'errore."\n')
+        elif lang == 'de':
+            f.write(f'    MsgBox "{script_path} konnte nicht gefunden werden. Führen Sie TeleVediInstaller.bat aus, um den Fehler zu beheben."\n')
         else:
             f.write(f'    MsgBox "Cannot find {script_path}. Run TeleVediInstaller.bat to fix the error."\n')
         f.write(f'    WScript.Quit\n')
@@ -45,6 +49,8 @@ def register_autostart(script_path):
 
     if lang == 'it':
         print(f"Script registrato per l'avvio automatico su Windows (silenzioso): {vbs_path}")
+    elif lang == 'de':
+        print(f"Skript für den automatischen (stillen) Start unter Windows registriert: {vbs_path}")
     else:
         print(f"Script registered for automatic startup on Windows (silent mode): {vbs_path}")
 
@@ -53,6 +59,8 @@ def main():
     register_autostart(script_path)
     if lang == 'it':
         input("Fine")
+    elif lang == 'de':
+        input("Vorgang abgeschlossen")
     else:
         input("Done")
 

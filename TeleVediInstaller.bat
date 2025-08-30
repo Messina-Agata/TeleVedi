@@ -16,6 +16,8 @@ if %errorlevel% neq 0 (
 :: Italiano
 if "%locale%"=="0410" (
     echo Privilegi amministratore confermati.
+) else if "%locale%"=="0407" (
+    echo Administratorrechte bestätigt.
 ) else (
     echo Admin rights confirmed.
 )
@@ -27,6 +29,8 @@ set "installer=VC_redist.x64.exe"
 
 if "%locale%"=="0410" (
     echo Controllo della libreria vcruntime140.dll...
+) else if "%locale%"=="0407" (
+    echo Überprüfung der Bibliothek vcruntime140.dll...
 ) else (
     echo vcruntime140.dll library check...
 )
@@ -36,6 +40,8 @@ if exist "%dllPath%" (
     for /f %%v in ('powershell -Command "(Get-Item '%dllPath%').VersionInfo.FileVersion"') do (
         if "%locale%"=="0410" (
             echo Versione rilevata: %%v
+        ) else if "%locale%"=="0407" (
+            echo Erkannte Version: %%v
         ) else (
             echo Detected version: %%v
         )
@@ -44,6 +50,8 @@ if exist "%dllPath%" (
 ) else (
     if "%locale%"=="0410" (
         echo Il file vcruntime140.dll non è presente.
+    ) else if "%locale%"=="0407" (
+        echo Die Datei vcruntime140.dll ist nicht vorhanden.
     ) else (
         echo vcruntime140.dll does not exist.
     )
@@ -96,6 +104,8 @@ if !curVer1! GTR !minVer1! (
 if "%isCurrentVersionGreaterOrEqual%"=="false" (
     if "%locale%"=="0410" (
         echo Versione insufficiente. Scarico e installo Visual C++ Redistributable...
+    ) else if "%locale%"=="0407" (
+        echo Unzureichende Version. Visual C++ Redistributable wird heruntergeladen und installiert...
     ) else (
         echo Insufficient version. Downloading and installing Visual C++ Redistributable...
     )
@@ -107,6 +117,9 @@ if "%isCurrentVersionGreaterOrEqual%"=="false" (
         if "%locale%"=="0410" (
             echo Installer scaricato con successo.
             echo Avvio dell'installer...
+        ) else if "%locale%"=="0407" (
+            echo Installer erfolgreich heruntergeladen.
+            echo Installer wird gestartet...
         ) else (
             echo Installer successfully downloaded.
             echo Starting the installer...
@@ -115,6 +128,8 @@ if "%isCurrentVersionGreaterOrEqual%"=="false" (
     ) else (
         if "%locale%"=="0410" (
             echo Errore: il file non è stato scaricato correttamente.
+        ) else if "%locale%"=="0407" (
+            echo Fehler: Die Datei wurde nicht korrekt heruntergeladen.
         ) else (
             echo Error: the file was not downloaded correctly.
         )
@@ -125,6 +140,10 @@ if "%isCurrentVersionGreaterOrEqual%"=="false" (
         echo Installazione completata.
         :: Cancella l'installer
         echo Pulizia...
+    ) else if "%locale%"=="0407" (
+        echo Installation abgeschlossen.
+        :: Installer löschen
+        echo Aufräumen...
     ) else (
         echo Install completed.
         :: Delete the installer
@@ -134,6 +153,8 @@ if "%isCurrentVersionGreaterOrEqual%"=="false" (
 ) else (
     if "%locale%"=="0410" (
         echo Versione compatibile già installata.
+    ) else if "%locale%"=="0407" (
+        echo Kompatible Version bereits installiert.
     ) else (
         echo Compatible version already installed.
     )
@@ -148,6 +169,8 @@ powershell -Command "$s=(New-Object -ComObject WScript.Shell).CreateShortcut('%f
 
 if "%locale%"=="0410" (
     echo Collegamento TeleVedi creato con successo!
+) else if "%locale%"=="0407" (
+    echo TeleVedi-Verknüpfung erfolgreich erstellt!
 ) else (
     echo Shortcut to TeleVedi successfully created!
 )
