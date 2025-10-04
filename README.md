@@ -22,7 +22,7 @@
 - `TeleVediInstaller.py`: Script per installare i componenti indispensabili per il funzionamento del programma
 - `TeleVediUninstaller.py`: Script per disinstallare lo scheduler del programma
 - Script PHP, batch e Python di supporto
-- `ffmpeg.exe`, `php.exe`, `yt-dlp.exe`: Eseguibili necessari
+- `ffmpeg.exe`, `ffprobe.exe`, `php.exe`, `yt-dlp.exe`: Eseguibili necessari
 - File di configurazione: `.json`, `.txt`
 
 ## 🛠 Requisiti
@@ -134,7 +134,7 @@ Per qualsiasi dubbio sull’uso legale del software, si consiglia di consultare 
 - `TeleVediInstaller.py`: Script to install the required components
 - `TeleVediUninstaller.py`: Script to uninstall the program scheduler
 - PHP, Batch and Python support scripts
-- `ffmpeg.exe`, `php.exe`, `yt-dlp.exe`: Required executables
+- `ffmpeg.exe`, `ffprobe.exe`, `php.exe`, `yt-dlp.exe`: Required executables
 - Configuration files: `.json`, `.txt`
 
 ## 🛠 Requirements
@@ -242,7 +242,7 @@ For any doubts regarding the legal use of the software, it is recommended to con
 - `TeleVediInstaller.py`: Skript zur Installation der erforderlichen Komponenten
 - `TeleVediUninstaller.py`: Skript zur Deinstallation des Programmplaners
 - Unterstützungsskripte für PHP, Batch und Python
-- `ffmpeg.exe`, `php.exe`, `yt-dlp.exe`: Erforderliche ausführbare Dateien
+- `ffmpeg.exe`, `ffprobe.exe`, `php.exe`, `yt-dlp.exe`: Erforderliche ausführbare Dateien
 - Konfigurationsdateien: `.json`, `.txt`
 
 ## 🛠 Anforderungen

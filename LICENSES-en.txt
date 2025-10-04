@@ -1,6 +1,6 @@
 Licenses of the components included in the package:
 
-1. FFmpeg
+1. FFmpeg project
    - License: GPL v2.1+
    - Source: https://ffmpeg.org
    - Corresponding source code: https://github.com/FFmpeg/FFmpeg

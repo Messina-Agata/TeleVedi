@@ -115,6 +115,35 @@ IF NOT EXIST "ffmpeg.exe" (
     )
 )
 
+IF NOT EXIST "ffprobe.exe" (
+    if "%locale%"=="0410" (
+        echo Estrazione di ffprobe.exe da ffprobe.zip...
+    ) else if "%locale%"=="0407" (
+        echo Extrahieren von ffprobe.exe aus ffprobe.zip...
+    ) else (
+        echo Extracting ffprobe.exe from ffprobe.zip...
+    )
+
+    IF EXIST "ffprobe.zip" (
+        powershell -Command "Expand-Archive -Path 'ffprobe.zip' -DestinationPath '.'"
+        if "%locale%"=="0410" (
+            echo Estrazione completata.
+        ) else if "%locale%"=="0407" (
+            echo Extraktion abgeschlossen.
+        ) else (
+            echo Extraction completed.
+        )
+    ) ELSE (
+        if "%locale%"=="0410" (
+            echo ERRORE: ffprobe.zip non trovato!
+        ) else if "%locale%"=="0407" (
+            echo FEHLER: ffprobe.zip nicht gefunden!
+        ) else (
+            echo ERROR: ffprobe.zip not found!
+        )
+    )
+)
+
 endlocal
 
 setlocal

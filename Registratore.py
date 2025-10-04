@@ -150,7 +150,7 @@ def record():
         return
 
     if (not availability_check(flusso)):
-        answer = messagebox.askyesnocancel(_("Flusso non valido", "Il canale selezionato è al momento non raggiungibile, pertanto la registrazione potrebbe non andare a buon fine. Avviare comunque la registrazione?"))
+        answer = messagebox.askyesnocancel(_("Flusso non valido"), _("Il canale selezionato è al momento non raggiungibile, pertanto la registrazione potrebbe non andare a buon fine. Avviare comunque la registrazione?"))
         if (not answer):
             return
         

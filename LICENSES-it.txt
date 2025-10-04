@@ -1,6 +1,6 @@
 Licenze dei componenti inclusi nel pacchetto:
 
-1. FFmpeg
+1. FFmpeg project
    - Licenza: GPL v2.1+
    - Fonte: https://ffmpeg.org
    - Codice sorgente corrispondente: https://github.com/FFmpeg/FFmpeg

@@ -1,6 +1,6 @@
 Lizenzen der im Paket enthaltenen Komponenten:
 
-1. FFmpeg
+1. FFmpeg project
    - Lizenz: GPL v2.1+
    - Quelle: https://ffmpeg.org
    - Quellcode: https://github.com/FFmpeg/FFmpeg

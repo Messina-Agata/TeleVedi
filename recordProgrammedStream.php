@@ -18,9 +18,33 @@
 
     $flussoOrig = $flusso;
 
-    function startFfmpegAndGetPid(string $input, string $output): ?int {
+    function startFfmpegAndGetPid(string $input, string $output, string $localPath): ?int {
         $pid = 0;
-        $command = "ffmpeg -i \"" . $input . "\" \"" . $output . "\"";
+        $ffprobePath = $localPath . "\\ffprobe.exe";
+        $ffprobeCommand = escapeshellarg($ffprobePath) . " -v error -select_streams v -show_entries stream=index,codec_type,codec_name,width,height,channels,sample_rate,bit_rate -of json \"" . $input . "\"";
+        $outputFfprobe = shell_exec($ffprobeCommand);
+        $formatsAvailable = json_decode($outputFfprobe, true);
+        $maxResolution = 0;
+        $bestIndex = null;
+        foreach ($formatsAvailable['streams'] as $stream) {
+            if ($stream['codec_type'] === 'video') {
+                $width = $stream['width'] ?? 0;
+                $height = $stream['height'] ?? 0;
+                $resolution = $width * $height;
+                if ($resolution > $maxResolution) {
+                    $maxResolution = $resolution;
+                    $bestIndex = $stream['index'];
+                }
+            }
+        }
+        if ($bestIndex != null)
+        {
+            $command = "ffmpeg -i \"" . $input . "\" -map 0:" . (string)$bestIndex . " -map 0:a:0 -sn \"" . $output . "\"";
+        }
+        else
+        {
+            $command = "ffmpeg -i \"" . $input . "\" -map 0:v:0 -map 0:a:0 -sn \"" . $output . "\"";
+        }
         $cmd = "start \"" . substr($input, 0, 72) . "\" cmd.exe @cmd /c " . $command; // con /c quando si ferma la registrazione si chiude anche la console; con /k invece si ferma la registrazione ma la console rimane aperta
         $handle = popen("start /B ". $cmd, "r");
         sleep(6);
