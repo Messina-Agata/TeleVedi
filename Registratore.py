@@ -34,7 +34,8 @@ try:
 except Exception as e:
     lang_code = 'en_US'
     encoding = 'UTF-8'
-lang = lang_code[:2].lower() if lang_code else 'en'
+lang_prefix = lang_code[:2].lower()
+lang = lang_prefix if lang_prefix in ("it", "de") else "en"
 localedir = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'locales')
 try:
     translation = gettext.translation('messages', localedir, languages=[lang])

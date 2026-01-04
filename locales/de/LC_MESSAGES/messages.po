@@ -187,7 +187,7 @@ msgid "Segnala un problema"
 msgstr "Ein Problem melden"
 
 msgid "Iberna il PC al termine della registrazione"
-msgstr "Den PC am Ende der Aufnahme in den Ruhezustand versetzen"
+msgstr "PC nach Aufnahme in Ruhezustand"
 
 msgid "Ibernazione: %s"
 msgstr "Ruhezustand: %s"
