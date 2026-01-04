@@ -69,7 +69,7 @@ Riempire quindi tutti i campi visibili. In presenza di campi non riempiti o di v
 
 Tenere in considerazione che le registrazioni programmate non vengono avviate né fermate esattamente allo scattare del minuto impostato, ma possono esserci dei ritardi inferiori al minuto.
 
-⚠️ Nella fascia oraria in cui una registrazione è programmata, il computer deve rimanere acceso e sbloccato. Assicurarsi quindi che il blocco automatico dello schermo sia disabilitato per tutta la durata della registrazione. Si consiglia di accendere il computer almeno 5 minuti prima rispetto all'orario di inizio della registrazione programmata. 
+⚠️ Nella fascia oraria in cui una registrazione è programmata, il computer deve rimanere acceso e sbloccato. Assicurarsi quindi che il blocco automatico dello schermo sia disabilitato per tutta la durata della registrazione. Si consiglia di accendere il computer almeno 5 minuti prima rispetto all'orario di inizio della registrazione programmata. Selezionando l'apposita spunta, è possibile ibernare automaticamente il PC al termine della registrazione programmata.
 
 ⚠️ Quando una registrazione viene avviata, si apre una finestra che mostra l'avanzamento della registrazione. La chiusura di tale finestra interrompe forzatamente la registrazione, pertanto fare attenzione a non chiuderla.
 
@@ -180,7 +180,7 @@ Fill in all visible fields. If any fields are left empty or contain inconsistent
 
 Please note that scheduled recordings do not start or stop exactly at the set minute; slight delays of less than one minute may occur.
 
-⚠️ During the scheduled recording time, the computer must remain turned on and unlocked. Make sure to disable automatic screen lock for the entire duration of the recording. It is recommended to turn on the computer at least 5 minutes before the scheduled start time. 
+⚠️ During the scheduled recording time, the computer must remain turned on and unlocked. Make sure to disable automatic screen lock for the entire duration of the recording. It is recommended to turn on the computer at least 5 minutes before the scheduled start time. By selecting the appropriate checkbox, the PC can automatically hibernate at the end of the scheduled recording.
 
 ⚠️ When a recording starts, a window displaying the recording progress will open. Closing this window will forcibly stop the recording, so be careful not to close it.
 
@@ -288,7 +288,7 @@ Füllen Sie alle sichtbaren Felder aus. Wenn Felder leer bleiben oder widersprü
 
 Bitte beachten Sie: Geplante Aufnahmen beginnen und enden nicht exakt zur angegebenen Minute; es kann zu leichten Verzögerungen von weniger als einer Minute kommen.
 
-⚠️ Während der geplanten Aufnahmezeit muss der Computer eingeschaltet und entsperrt bleiben. Deaktivieren Sie die automatische Bildschirmsperre für die gesamte Dauer der Aufnahme. Es wird empfohlen, den Computer mindestens 5 Minuten vor dem geplanten Start einzuschalten.
+⚠️ Während der geplanten Aufnahmezeit muss der Computer eingeschaltet und entsperrt bleiben. Deaktivieren Sie die automatische Bildschirmsperre für die gesamte Dauer der Aufnahme. Es wird empfohlen, den Computer mindestens 5 Minuten vor dem geplanten Start einzuschalten. Durch Aktivieren des entsprechenden Kontrollkästchens kann der PC am Ende der geplanten Aufnahme automatisch in den Ruhezustand versetzt werden.
 
 ⚠️ Beim Start der Aufnahme öffnet sich ein Fenster mit dem Fortschritt der Aufnahme. Das Schließen dieses Fensters beendet die Aufnahme sofort. Achten Sie daher darauf, das Fenster nicht zu schließen.
 
