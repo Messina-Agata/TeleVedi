@@ -54,7 +54,7 @@ if is_script_running():
     messagebox.showinfo(_("TeleVedi - Registratore già in esecuzione"), _("Un'istanza di TeleVedi - Registratore è già avviata"))
     sys.exit()
 
-__location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))
+__location__ = os.path.dirname(os.path.abspath(__file__))
 values = []
 channelOk = False
 filePathOk = False
@@ -99,6 +99,7 @@ def recTypeChanged(event):
         startDay.grid(row = 4, column = 0, sticky="WE", padx = 15, pady = 10)
         startTimeFrame.grid(row = 4, column = 1, sticky="WE", padx = 15, pady = 10)
         label_end.grid(row = 5, column = 0, padx = 10, pady = 10, sticky = "WE")
+        hib_check.grid(row = 5, column = 1, padx = 10, pady = 10, sticky = "WE")
         endDay.grid(row = 6, column = 0, sticky="WE", padx = 15, pady = 10)
         endTimeFrame.grid(row = 6, column = 1, sticky="WE", padx = 15, pady = 10)
         program_button.grid(row = 7, column = 1, padx = 10, pady = 10, sticky = "WE")
@@ -111,6 +112,7 @@ def recTypeChanged(event):
         startDay.grid_remove()
         startTimeFrame.grid_remove()
         label_end.grid_remove()
+        hib_check.grid_remove()
         endDay.grid_remove()
         endTimeFrame.grid_remove()
         program_button.grid_remove()
@@ -225,7 +227,8 @@ def programRec():
         "oraFine": oraFine,
         "ffmpegPid": "0",
         "flusso": flussoCoded,
-        "path": file_path
+        "path": file_path,
+        "hib": hib.get()
     }))
 
     program.append(newEntry)
@@ -408,6 +411,8 @@ def viewRecs():
         lbl.pack(anchor="w")
         lbl = ttk.Label(frame_label, text=f"Path download: {entry["path"]}", anchor="w", background="white")
         lbl.pack(anchor="w")
+        lbl = ttk.Label(frame_label, text=_("Ibernazione: %s") % _("Sì") if entry["hib"] == 1 else _("No"), anchor="w", background="white")
+        lbl.pack(anchor="w")
 
         def crea_callback(chiave_locale):
             def rimuovi():
@@ -510,78 +515,27 @@ def aggiorna_tabella(tree):
         tree.insert("", "end", values=(canale["nome"], canale["flusso"]))
 
 def availability_check(flusso):
-    TIMEOUT = 5
+    TIMEOUT = 20
     headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                    "(KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
     }
+
     def ensure_schema(url):
         if not url.startswith(("http://", "https://")):
             return "http://" + url
         return url
 
+    flusso = ensure_schema(flusso)
+
     try:
-        flusso = ensure_schema(flusso)
-        response = requests.head(flusso, headers=headers, timeout=TIMEOUT)
-        status = response.status_code
-        if status == 200:
+        # Primo tentativo con HEAD
+        response = requests.head(flusso, headers=headers, timeout=TIMEOUT, allow_redirects=True)
+        if response.ok:
             return True
-        elif status == 302:
-            redirect_url = response.headers.get("Location")
-            try:
-                redirect_url = ensure_schema(redirect_url)
-                redirected_response = requests.get(redirect_url, headers=headers, timeout=TIMEOUT)
-                redirected_status = redirected_response.status_code
-                if redirected_status == 200:
-                    return True
-                else:
-                    return False
-            except requests.RequestException:
-                return False
-        elif status == 301:
-            redirect_url = response.headers.get("Location")
-            try:
-                redirect_url = ensure_schema(redirect_url)
-                redirected_response = requests.get(redirect_url, headers=headers, timeout=TIMEOUT)
-                redirected_status = redirected_response.status_code
-                if redirected_status == 200:
-                    return True
-                else:
-                    return False
-            except requests.RequestException:
-                return False
-        elif status == 403:
-            response = requests.get(flusso, headers=headers, timeout=TIMEOUT)
-            status = response.status_code
-            if status == 200:
-                return True
-            else:
-                return False
-        elif status == 404:
-            response_get = requests.get(flusso, headers=headers, timeout=TIMEOUT, allow_redirects=True)
-            if response_get.status_code == 200:
-                return True
-            else:
-                return False
-        elif status == 405:
-            response_get = requests.get(flusso, headers=headers, timeout=TIMEOUT, allow_redirects=True)
-            if response_get.status_code == 200:
-                return True
-            else:
-                return False
-        elif status == 307:
-            redirect_url = response.headers.get("Location")
-            try:
-                redirect_url = ensure_schema(redirect_url)
-                redirected_response = requests.get(redirect_url, headers=headers, timeout=TIMEOUT)
-                if redirected_response.status_code == 200:
-                    return True
-                else:
-                    return False
-            except requests.RequestException:
-                return False
-        else:
-            return False
+
+        # Se HEAD non basta, prova GET
+        response = requests.get(flusso, headers=headers, timeout=TIMEOUT, allow_redirects=True)
+        return response.ok
     except requests.RequestException:
         return False
 
@@ -797,7 +751,7 @@ def report_issue():
     webbrowser.open("https://github.com/Messina-Agata/TeleVedi/issues")
 
 def accetto(finestra):
-    with open(FLAG_FILE, "w") as f:
+    with open(os.path.join(__location__, FLAG_FILE), "w") as f:
         f.write("avviato")
     finestra.destroy()
 
@@ -886,11 +840,12 @@ style = ttk.Style()
 style.configure("TButton", padding=6, font=("Segoe UI", 18))
 style.configure("TLabel", font=("Segoe UI", 18))
 style.configure("Bianco.TFrame", background="white")
+style.configure("Custom.TCheckbutton", background="white", foreground="black", font=("Segoe UI", 16))
 
 bigfont = tk.font.Font(family = "Segoe UI", size = 15)
 window.option_add("*TCombobox*Listbox*Font", bigfont)
 
-if not os.path.exists(FLAG_FILE):
+if not os.path.exists(os.path.join(__location__, FLAG_FILE)):
     accetta_condizioni_di_utilizzo(window)
 
 label_rectype = ttk.Label(window, text = _("Controllo registrazione"), foreground = "black", background = "white")
@@ -961,6 +916,8 @@ startMinute['values'] = startMinuteValues
 startMinute.pack(side = "right", fill = "both", expand = True)
 
 label_end = ttk.Label(window, text = _("Data e ora di fine"), foreground = "black", background = "white")
+hib = tk.IntVar(value=0)
+hib_check = ttk.Checkbutton(window, text=_("Iberna il PC al termine della registrazione"), variable=hib, style="Custom.TCheckbutton")
 
 endDay = DateEntry(window, date_pattern='dd/mm/yyyy', font = 20, selectmode = 'day')
 eds = tk.StringVar()

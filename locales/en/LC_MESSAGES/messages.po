@@ -185,3 +185,15 @@ msgstr "See programmed recordings"
 
 msgid "Segnala un problema"
 msgstr "Report a problem"
+
+msgid "Iberna il PC al termine della registrazione"
+msgstr "Hibernate the PC at the end of the recording"
+
+msgid "Ibernazione: %s"
+msgstr "Hibernate: %s"
+
+msgid "Sì"
+msgstr "Yes"
+
+msgid "No"
+msgstr "No"

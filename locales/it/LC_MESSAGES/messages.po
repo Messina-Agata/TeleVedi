@@ -185,3 +185,15 @@ msgstr "Vedi registrazioni programmate"
 
 msgid "Segnala un problema"
 msgstr "Segnala un problema" 
+
+msgid "Iberna il PC al termine della registrazione"
+msgstr "Iberna il PC al termine della registrazione"
+
+msgid "Ibernazione: %s"
+msgstr "Ibernazione: %s"
+
+msgid "Sì"
+msgstr "Sì"
+
+msgid "No"
+msgstr "No"

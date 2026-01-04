@@ -3,6 +3,7 @@
     $localPath = $argv[2];
     $ffmpeg = 0;
     $discard = 0;
+    $hib = 0;
 
     $programPath = $localPath . DIRECTORY_SEPARATOR . "program.json";
     $jsonArray = file_get_contents($programPath);
@@ -11,6 +12,7 @@
         if ($entry["id"] == $sequenceNumber) {
             $pid = $entry["ffmpegPid"];
             $discard = $key;
+            $hib = $entry["hib"];
             break;
         }
     }
@@ -25,4 +27,10 @@
             exec("kill $pid");
         }
     }
+
+    if ($hib == 1) {
+        sleep(10);
+        exec("shutdown /h");
+    }
+
 ?>

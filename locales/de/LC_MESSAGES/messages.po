@@ -185,3 +185,15 @@ msgstr "Geplante Aufnahmen anzeigen"
 
 msgid "Segnala un problema"
 msgstr "Ein Problem melden"
+
+msgid "Iberna il PC al termine della registrazione"
+msgstr "Den PC am Ende der Aufnahme in den Ruhezustand versetzen"
+
+msgid "Ibernazione: %s"
+msgstr "Ruhezustand: %s"
+
+msgid "Sì"
+msgstr "Ja"
+
+msgid "No"
+msgstr "Nein"
