@@ -412,7 +412,7 @@ def viewRecs():
         lbl.pack(anchor="w")
         lbl = ttk.Label(frame_label, text=f"Path download: {entry["path"]}", anchor="w", background="white")
         lbl.pack(anchor="w")
-        lbl = ttk.Label(frame_label, text=_("Ibernazione: %s") % _("Sì") if entry["hib"] == 1 else _("No"), anchor="w", background="white")
+        lbl = ttk.Label(frame_label, text=_("Ibernazione: %s") % (_("Sì") if entry["hib"] == 1 else _("No")), anchor="w", background="white")
         lbl.pack(anchor="w")
 
         def crea_callback(chiave_locale):
