@@ -7,7 +7,7 @@ if exist "%auto_start_script%" (
     del "%auto_start_script%"
 )
 
-for /f "tokens=2 delims==" %%a in ('"wmic os get locale /value"') do set locale=%%a
+for /f "usebackq tokens=*" %%a in (`powershell -NoProfile -Command "'{0:x4}' -f (Get-Culture).LCID"`) do set locale=%%a
 if "%locale%"=="0410" (
     echo TeleVedi - Registratore disinstallato con successo.
 ) else if "%locale%"=="0407" (

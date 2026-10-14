@@ -3,7 +3,7 @@ setlocal enabledelayedexpansion
 
 cd /d "%~dp0"
 
-for /f "tokens=2 delims==" %%a in ('"wmic os get locale /value"') do set locale=%%a
+for /f "usebackq tokens=*" %%a in (`powershell -NoProfile -Command "'{0:x4}' -f (Get-Culture).LCID"`) do set locale=%%a
 
 :: Verifica se il batch è stato avviato come amministratore
 powershell -Command "if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) { exit 1 }"
